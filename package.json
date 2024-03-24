@@ -1,0 +1,16 @@
+{
+  "name": "react-datetime-module",
+  "version": "1.0.0",
+  "description": "An NPM Package to use date and time effectively in React",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shatadip/react-datetime-module.git"
+  },
+  "keywords": ["datetime", "react", "date", "time", "react-datetime"],
+  "author": "Shatadip Majumder",
+  "license": "MIT"
+}
