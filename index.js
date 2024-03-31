@@ -1,3 +1,63 @@
+// .----------------.  .----------------.  .----------------.  .----------------. 
+// | .--------------. || .--------------. || .--------------. || .--------------. |
+// | |  _______     | || |  ________    | || |  _________   | || | ____    ____ | |
+// | | |_   __ \    | || | |_   ___ `.  | || | |  _   _  |  | || ||_   \  /   _|| |
+// | |   | |__) |   | || |   | |   `. \ | || | |_/ | | \_|  | || |  |   \/   |  | |
+// | |   |  __ /    | || |   | |    | | | || |     | |      | || |  | |\  /| |  | |
+// | |  _| |  \ \_  | || |  _| |___.' / | || |    _| |_     | || | _| |_\/_| |_ | |
+// | | |____| |___| | || | |________.'  | || |   |_____|    | || ||_____||_____|| |
+// | |              | || |              | || |              | || |              | |
+// | '--------------' || '--------------' || '--------------' || '--------------' |
+//  '----------------'  '----------------'  '----------------'  '----------------' 
+
+
+/**
+ * There are 5 functions here, and you can use them in React, NextJS, NodeJS etc.:
+ * 
+ * 1. getCurrentTime()
+ * 2. distanceToNow()
+ * 3. convertToUnixTimestamp()
+ * 4. convertFromUnixTimestamp()
+ * 5. getCurrentTimezone()
+ * 
+ * I have pointed out how to use each of these below, and there's also a testIndex.js file in the same folder, which you can refer or run to test these functions.
+ * 
+ * Now I know you are lazy and don't want to do that, so here's how each of these functions work:
+ * 
+ * 1. getCurrentTime()
+ * 
+ * let myFormat = getCurrentTime("MONNAME DD, YY. hh:mm:ss a");
+ * console.log(myFormat); //Example output: Mar 31, 24. 06:56:01 pm
+ * 
+ * 2. distanceToNow()
+ * 
+ * console.log(distanceToNow('Mar 26, 2034 17:55:51', { addSuffix: true, includeSeconds: true })); // Example output: about 9 years from now
+ * console.log(distanceToNow('Mar 26, 2014 17:55:51', { addSuffix: true, includeSeconds: true })); // Example output: about 10 years ago
+ * console.log(distanceToNow('Mar 31, 2024 18:55:51', { addSuffix: true, includeSeconds: true })); // Example output: 3 minutes ago
+ * 
+ * 3. convertToUnixTimestamp()
+ * 
+ * console.log(convertToUnixTimestamp()); // Example output: 1711891857 [No argument gives you the current timestamp]
+ * console.log(convertToUnixTimestamp('12:07 pm, 25 Mar 2024')); // Output: 1711348620 [You can pass a string argument to convert a specific time to Unix timestamp]
+ * 
+ * 4. convertFromUnixTimestamp()
+ * 
+ * console.log(convertFromUnixTimestamp(1711461716, 'MONTHNAME DD, YYYY hh:mm:ss a')); // Output: March 26, 2024 07:31:56 pm [You can mention the output format]
+ * console.log(convertFromUnixTimestamp(1670000000)); // Output: 12-02-22 10:23:20 pm
+ * console.log(convertFromUnixTimestamp(1711348620, 'MONTHNAME DD, YYYY hh:mm:ss a')); // Output: March 25, 2024 12:07:00 pm
+ * 
+ * 5. getCurrentTimezone()
+ * 
+ * console.log(getCurrentTimezone()); // Example output: Asia/Calcutta (UTC+5.5)
+ * 
+ * Questions or bugs, please raise the issue here: https://github.com/shatadip/react-datetime-module/issues
+ * 
+ * Or connect with me on LinkedIn: https://www.linkedin.com/in/shatadip/
+ * 
+ * 
+ */
+
+
 /**
  * Returns the current time formatted according to the specified format.
  *
