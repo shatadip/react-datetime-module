@@ -4,6 +4,7 @@
   "description": "An NPM Package to use date and time effectively in React",
   "main": "index.js",
   "type": "module",
+  "types": "types.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shatadip/react-datetime-module.git"
