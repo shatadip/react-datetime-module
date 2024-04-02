@@ -1,6 +1,6 @@
 {
   "name": "react-datetime-module",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "An NPM Package to use date and time effectively in React",
   "main": "index.js",
   "type": "module",
