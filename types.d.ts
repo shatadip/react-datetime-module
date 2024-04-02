@@ -5,3 +5,5 @@ declare module 'index' {
     export function convertFromUnixTimestamp(timestamp: number, format?: string, options?: { showTimeZone?: boolean }): string;
     export function getCurrentTimezone(): string;
 }
+
+export {};
