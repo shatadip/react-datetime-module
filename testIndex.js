@@ -3,7 +3,7 @@ import { getCurrentTime, distanceToNow, convertToUnixTimestamp, convertFromUnixT
 
 // console.log(getCurrentTimezone()); // Example output: Asia/Calcutta (UTC+5.5)
 
-let myFormat = getCurrentTime("MONNAME DD, YY. hh:mm:ss a");
+let myFormat = getCurrentTime("MONNAME DD, YYYY. hh:mm:ss a");
 console.log(myFormat); //Example output: Mar 31, 24. 06:56:01 pm
 // console.log(convertToUnixTimestamp('5:51:55 pm, 26 Mar 2024'));
 

@@ -26,8 +26,13 @@
  * 
  * 1. getCurrentTime()
  * 
- * let myFormat = getCurrentTime("MONNAME DD, YY. hh:mm:ss a");
- * console.log(myFormat); //Example output: Mar 31, 24. 06:56:01 pm
+ * let myFormat = getCurrentTime("MONNAME DD, YYYY. hh:mm:ss a");
+ * console.log(myFormat); //Example output: Mar 31, 2024. 06:56:01 pm
+ * 
+ * You can also get a 24hour format with HH instead of hh, like the following
+ * 
+ * let myFormat = getCurrentTime("MONNAME DD, YYYY. HH:mm:ss");
+ * console.log(myFormat); //Example output: Mar 31, 2024. 18:56:01
  * 
  * 2. distanceToNow()
  * 
