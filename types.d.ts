@@ -6,4 +6,4 @@ declare module 'index' {
     export function getCurrentTimezone(): string;
 }
 
-export {};
+export {getCurrentTime, distanceToNow, convertToUnixTimestamp, convertFromUnixTimestamp, getCurrentTimezone};
