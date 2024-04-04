@@ -28,6 +28,25 @@ Returns the current time formatted according to the specified format.
 let myFormat = getCurrentTime("MONNAME DD, YYYY. hh:mm:ss a");
 console.log(myFormat); // Example output: Mar 31, 2024. 06:56:01 pm
 ```
+
+## Function Options for getCurrentTime()
+
+The `getCurrentTime` function uses the following options to format the time string:
+
+- `'YYYY'`: This option will be replaced with the full year (e.g., 2024).
+- `'YY'`: This option will be replaced with the last two digits of the year (e.g., 24 for the year 2024).
+- `'MM'`: This option will be replaced with the month (e.g., 03 for March).
+- `'DD'`: This option will be replaced with the day of the month (e.g., 26).
+- `'hh'`: This option will be replaced with the hour in 12-hour format (e.g., 05 for 5 am or 05 for 5 pm).
+- `'HH'`: This option will be replaced with the hour in 24-hour format (e.g., 17 for 5 pm).
+- `'mm'`: This option will be replaced with the minutes (e.g., 55).
+- `'ss'`: This option will be replaced with the seconds (e.g., 51).
+- `'a'`: This option will be replaced with 'am' or 'pm' depending on whether the hour is before or after noon.
+- `'MONTHNAME'`: This option will be replaced with the full name of the month (e.g., March).
+- `'MONNAME'`: This option will be replaced with the short name of the month (e.g., Mar).
+
+These options allow you to customize the format of the time string that the `getCurrentTime` function returns. For example, if you use the format 'MONNAME DD, YYYY. hh:mm:ss a', the function will return a string like 'Mar 26, 2024. 05:55:51 am'.
+
 ### 2. distanceToNow()
 Calculates the distance from the current time to the target time.
 
